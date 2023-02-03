@@ -46,7 +46,7 @@ class _NavbarScreenState extends State<NavbarScreen> {
             selectedItemColor: Colors.indigo,
           unselectedItemColor: Colors.grey,
           selectedLabelStyle: TextStyle(fontFamily:'Inter-Regular.ttf',
-              fontSize: 12,
+              fontSize: 14,
               fontWeight: FontWeight.normal),
 
           currentIndex: _CurrentIndex,
@@ -58,26 +58,31 @@ class _NavbarScreenState extends State<NavbarScreen> {
 
             items: [
              BottomNavigationBarItem(
-               icon: Icon(Icons.home,),
+               icon: ImageIcon(
+                 AssetImage('assets/navbar_icons/houseicon.png'),size: 23,),
                label: 'Home',
              ),
               BottomNavigationBarItem(
-               icon: Icon(Icons.search),
+               icon: ImageIcon(
+                 AssetImage('assets/navbar_icons/searchicon.png'),),
                label: 'Search',
 
              ),
               BottomNavigationBarItem(
-               icon: Icon(Icons.emergency_recording_sharp),
+               icon: ImageIcon(
+                 AssetImage('assets/navbar_icons/record.png'),size: 25,),
                 label: 'Recoad',
              ),
               BottomNavigationBarItem(
-               icon: Icon(Icons.save),
+               icon: ImageIcon(
+                 AssetImage('assets/navbar_icons/saveim.png',),size: 20,),
                 label: 'Save',
              ),
               BottomNavigationBarItem(
                icon: Icon(Icons.settings),
                 label: 'Setting',
              ),
+            
 
 
             ],
