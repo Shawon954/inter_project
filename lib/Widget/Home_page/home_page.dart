@@ -1,5 +1,6 @@
 
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/svg.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({Key? key}) : super(key: key);
@@ -12,14 +13,15 @@ class _HomePageState extends State<HomePage> {
   var customsize, height, width;
 
   List<String> IMAGELINKVartical = [
-    'assets/hori_icon/yellow.png',
-    'assets/hori_icon/yellow.png',
-    'assets/hori_icon/yellow.png',
+    'assets/hori_icon/yellow.svg',
+  'assets/hori_icon/yellow.svg',
+  'assets/hori_icon/yellow.svg',
+
   ];
   List<String> IMAGELINK = [
-    'assets/hori_icon/yellow.png',
-    'assets/hori_icon/green.png',
-    'assets/hori_icon/bluecolor.png',
+    'assets/hori_icon/yellow.svg',
+    'assets/hori_icon/green.svg',
+    'assets/hori_icon/blue.svg',
   ];
   List<String> TiTle = ['Online Class Routine', 'Office Work List', 'Day Task'];
   List<String> SUBTITLE = [
@@ -146,14 +148,14 @@ class _HomePageState extends State<HomePage> {
                                       fontFamily: 'Inter-Regular.ttf'),
                                 ),
                                 SizedBox(
-                                  height: 15,
+                                  height: 10,
                                 ),
                                 Row(
                                   mainAxisAlignment:
                                       MainAxisAlignment.spaceBetween,
                                   children: [
                                     Container(
-                                      height: 55,
+                                      height: 50,
                                       width: 150,
                                       decoration: BoxDecoration(
                                           color: Color(0xf529cbb0),
@@ -189,13 +191,13 @@ class _HomePageState extends State<HomePage> {
                                       ),
                                     ),
                                     SizedBox(
-                                      width: 30,
+                                      width: 50,
                                     ),
                                     Container(
                                         height: 100,
                                         width: 100,
-                                        child: Image.asset(
-                                          'assets/image/banner.png',
+                                        child: SvgPicture.asset(
+                                          'assets/image/banner.svg',
                                           height: 80,
                                           width: 80,
                                         ))
@@ -260,7 +262,7 @@ class _HomePageState extends State<HomePage> {
                                 child: Column(
                                   crossAxisAlignment: CrossAxisAlignment.start,
                                   children: [
-                                    Image.asset(
+                                    SvgPicture.asset(
                                       IMAGELINK[index],
                                       height: 40,
                                       width: 40,
@@ -351,14 +353,14 @@ class _HomePageState extends State<HomePage> {
                               Padding(
                                 padding:
                                     const EdgeInsets.only(bottom: 8, left: 5),
-                                child: Image.asset(
+                                child: SvgPicture.asset(
                                   IMAGELINKVartical[index],
                                   height: 45,
                                   width: 45,
                                 ),
                               ),
                               SizedBox(
-                                width: 15,
+                                width: 10,
                               ),
                               Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,

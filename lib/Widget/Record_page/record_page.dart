@@ -14,7 +14,7 @@ class _RecordPageState extends State<RecordPage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.emergency_recording,size: 30,color: Colors.grey,),
+          Image.asset('assets/navbar_icons/record.png',color: Colors.grey,),
           Center(child: Text('Recorde',
             style: TextStyle(
                 color: Colors.grey,

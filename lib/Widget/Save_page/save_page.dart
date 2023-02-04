@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
 
 class SavePage extends StatefulWidget {
   const SavePage({Key? key}) : super(key: key);
@@ -14,13 +15,15 @@ class _SavePageState extends State<SavePage> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Icon(Icons.save,size: 30,color: Colors.grey,),
-          Center(child: Text('Save',
+          Image.asset('assets/navbar_icons/saveim.png',color: Colors.grey,),
+          Center(
+              child: Text('Save',
             style: TextStyle(
                 color: Colors.grey,
                 fontWeight: FontWeight.w600,
                 fontSize: 20,
                 fontFamily: 'Inter-Regular.ttf'),)),
+
 
         ],
       ),
