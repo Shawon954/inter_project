@@ -264,8 +264,8 @@ class _HomePageState extends State<HomePage> {
                                   children: [
                                     SvgPicture.asset(
                                       IMAGELINK[index],
-                                      height: 40,
-                                      width: 40,
+                                      height: 45,
+                                      width: 45,
                                     ),
                                     SizedBox(
                                       height: 3,
